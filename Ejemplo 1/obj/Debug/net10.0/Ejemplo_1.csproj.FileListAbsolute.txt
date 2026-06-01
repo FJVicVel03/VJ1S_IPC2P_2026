@@ -1,0 +1,15 @@
+C:\Users\ferna\Desktop\RepositorioLocal\VJ1S_IPC2P_2026\Ejemplo 1\bin\Debug\net10.0\Ejemplo_1.exe
+C:\Users\ferna\Desktop\RepositorioLocal\VJ1S_IPC2P_2026\Ejemplo 1\bin\Debug\net10.0\Ejemplo_1.deps.json
+C:\Users\ferna\Desktop\RepositorioLocal\VJ1S_IPC2P_2026\Ejemplo 1\bin\Debug\net10.0\Ejemplo_1.runtimeconfig.json
+C:\Users\ferna\Desktop\RepositorioLocal\VJ1S_IPC2P_2026\Ejemplo 1\bin\Debug\net10.0\Ejemplo_1.dll
+C:\Users\ferna\Desktop\RepositorioLocal\VJ1S_IPC2P_2026\Ejemplo 1\bin\Debug\net10.0\Ejemplo_1.pdb
+C:\Users\ferna\Desktop\RepositorioLocal\VJ1S_IPC2P_2026\Ejemplo 1\obj\Debug\net10.0\Ejemplo_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ferna\Desktop\RepositorioLocal\VJ1S_IPC2P_2026\Ejemplo 1\obj\Debug\net10.0\Ejemplo_1.AssemblyInfoInputs.cache
+C:\Users\ferna\Desktop\RepositorioLocal\VJ1S_IPC2P_2026\Ejemplo 1\obj\Debug\net10.0\Ejemplo_1.AssemblyInfo.cs
+C:\Users\ferna\Desktop\RepositorioLocal\VJ1S_IPC2P_2026\Ejemplo 1\obj\Debug\net10.0\Ejemplo_1.csproj.CoreCompileInputs.cache
+C:\Users\ferna\Desktop\RepositorioLocal\VJ1S_IPC2P_2026\Ejemplo 1\obj\Debug\net10.0\Ejemplo_1.sourcelink.json
+C:\Users\ferna\Desktop\RepositorioLocal\VJ1S_IPC2P_2026\Ejemplo 1\obj\Debug\net10.0\Ejemplo_1.dll
+C:\Users\ferna\Desktop\RepositorioLocal\VJ1S_IPC2P_2026\Ejemplo 1\obj\Debug\net10.0\refint\Ejemplo_1.dll
+C:\Users\ferna\Desktop\RepositorioLocal\VJ1S_IPC2P_2026\Ejemplo 1\obj\Debug\net10.0\Ejemplo_1.pdb
+C:\Users\ferna\Desktop\RepositorioLocal\VJ1S_IPC2P_2026\Ejemplo 1\obj\Debug\net10.0\Ejemplo_1.genruntimeconfig.cache
+C:\Users\ferna\Desktop\RepositorioLocal\VJ1S_IPC2P_2026\Ejemplo 1\obj\Debug\net10.0\ref\Ejemplo_1.dll

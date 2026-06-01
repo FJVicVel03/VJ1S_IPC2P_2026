@@ -1,78 +1,95 @@
-# Ejemplo 1: Introducción a la Programación Orientada a Objetos (POO)
-
-¡Bienvenido al **Ejemplo 1** del currículo progresivo diseñado para la clase!
+# Ejemplo 1 C#: Introducción a la Programación Orientada a Objetos (POO)
 
 ---
 
 ##  Objetivos de la Sesión
 
 Al finalizar este ejemplo, los estudiantes comprenderán:
-1. **Qué es una Clase**: La plantilla o plano lógico (`Satelite`) que define la estructura y comportamiento de una entidad.
-2. **Qué es un Objeto / Instancia**: La materialización concreta en memoria RAM de una clase.
-3. **El Constructor (`__init__`)**: El método especial para inicializar el estado del objeto.
-4. **Atributos Públicos**: Variables internas del objeto a las cuales se puede acceder y modificar directamente desde cualquier parte del código externo.
+1. **Qué es una Clase**: El plano estructural o plantilla lógica (`Satelite`) que define las características y el comportamiento de un objeto.
+2. **Qué es un Objeto / Instancia**: La materialización real en memoria RAM del plano lógico definido por la clase.
+3. **El Constructor**: El método especial (`public Satelite(...)`) ejecutado automáticamente para inicializar el estado del objeto en el momento de su creación.
+4. **Campos Públicos**: Variables de instancia accesibles y modificables de forma directa desde cualquier script externo mediante el operador de punto (`objeto.campo`).
 
 ---
 
-##  Estructura del Código
+##  Estructura de Archivos del Proyecto
 
-El ejemplo consta de dos archivos sumamente sencillos y acoplados lógicamente:
+Esta aplicación de consola en .NET 8 consta de los siguientes archivos:
 
-1. **`satelite.py`**: Contiene la definición de la clase `Satelite`.
-2. **`main.py`**: Contiene la inicialización de los objetos, impresión de sus estados y la modificación de sus atributos en consola.
+* 📄 **`Ejemplo_1.csproj`**: Archivo de configuración del proyecto .NET que define que es un ejecutable (`Exe`) bajo el entorno `net8.0`.
+* 📄 **`Satelite.cs`**: Declaración de la clase `Satelite` con campos públicos y su respectivo constructor.
+* 📄 **`Program.cs`**: Punto de entrada del programa. Utiliza la sintaxis simplificada *Top-Level Statements* para instanciar, modificar e imprimir los objetos satélites.
 
 ---
 
 ##  Conceptos Clave Explicados
 
-### 1. Definición de la Clase (`satelite.py`)
+### 1. Declaración de la Clase y Constructor (`Satelite.cs`)
 
-Una clase en Python se declara con la palabra reservada `class`. El constructor se define mediante la función especial `__init__`, la cual recibe la palabra clave `self` como primer parámetro (que representa la instancia actual del objeto):
+En C#, declaramos la clase con la palabra clave `class`. Los atributos públicos en su nivel más básico se declaran directamente como variables con el modificador de acceso `public`:
 
-```python
-class Satelite:
-    def __init__(self, id_satelite: str, nombre: str, enlace_ip: str):
-        # Atributos públicos
-        self.id = id_satelite
-        self.nombre = nombre
-        self.enlace_ip = enlace_ip
+```csharp
+namespace Ejemplo1
+{
+    public class Satelite
+    {
+        // Campos públicos
+        public string Id;
+        public string Nombre;
+        public string EnlaceIp;
+
+        // Constructor
+        public Satelite(string id, string nombre, string enlaceIp)
+        {
+            Id = id;
+            Nombre = nombre;
+            EnlaceIp = enlaceIp;
+        }
+
+        public string ObtenerDescripcion()
+        {
+            return $"Satélite: {Nombre} (ID: {Id}) -> Conectado a la IP: {EnlaceIp}";
+        }
+    }
+}
 ```
 
-* **Atributos Públicos**: Variables declaradas con la estructura `self.nombre_atributo = valor`. Cualquier script que importe la clase `Satelite` puede leer o reescribir estas variables de forma directa (por ejemplo, haciendo `objeto.enlace_ip = "NUEVA_IP"`).
+### 2. Instanciación y Manipulación de Objetos (`Program.cs`)
 
-### 2. Instanciación y Modificación (`main.py`)
+Usamos la palabra clave `new` para llamar al constructor y crear el objeto en memoria RAM. Luego, podemos leer o reescribir sus variables directamente:
 
-Para "fabricar" u obtener una instancia de nuestra clase, la llamamos como si fuera una función común, pasándole los argumentos requeridos por el constructor `__init__`:
+```csharp
+using Ejemplo1;
 
-```python
-# Instanciación
-satelite_a = Satelite("SAT-ECU-0001", "Starlink-Norte-A", "127.0.0.1")
+// 1. Instanciación
+Satelite satA = new Satelite("SAT-ECU-0001", "Starlink-Norte-A", "127.0.0.1");
 
-# Lectura directa de atributos
-print(satelite_a.nombre)  # Imprime: Starlink-Norte-A
+// 2. Lectura
+Console.WriteLine(satA.Nombre);  // Muestra: Starlink-Norte-A
 
-# Modificación directa de atributos
-satelite_a.enlace_ip = "192.168.1.100"
+// 3. Modificación directa
+satA.EnlaceIp = "192.168.1.100";
 ```
 
 ---
 
-##  Instrucciones de Ejecución
+##  Instrucciones de Ejecución Local
 
-Para ejecutar este ejemplo en la terminal de comandos:
+Para compilar y ejecutar este ejemplo en tu computadora local:
 
-1. Ubícate en la raíz de tu espacio de trabajo.
-2. Ejecuta el script principal con Python:
+1. Abre tu terminal de comandos (PowerShell, Git Bash o CMD).
+2. Asegúrate de estar posicionado en la carpeta raíz del repositorio.
+3. Ejecuta el comando de compilación y ejecución de la CLI de .NET:
 
 ```bash
-python "./Ejemplo 1/main.py"
+dotnet run --project ".\Ejemplo 1\Ejemplo_1.csproj"
 ```
 
 ### Salida Esperada en Pantalla
 
 ```text
 ============================================================
-  EJEMPLO 1: INTRODUCCIÓN A LA POO - CLASES Y OBJETOS BÁSICOS
+  EJEMPLO 1 C#: INTRODUCCIÓN A LA POO - CLASES Y OBJETOS
 ============================================================
 
 [+] Estado inicial de los satélites creados:
@@ -88,4 +105,3 @@ Satélite: Starlink-Norte-B-Modificado (ID: SAT-ECU-0002) -> Conectado a la IP: 
 ============================================================
 ```
 
-Este simple ejemplo sienta las bases para la sesión de la siguiente hora (Ejemplo 2), donde enseñaremos a los estudiantes por qué la modificación directa de atributos (como hicimos hoy) puede ser peligrosa y cómo resolverlo utilizando **Encapsulamiento Básico** (atributos protegidos y privados).
