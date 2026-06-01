@@ -88,4 +88,3 @@ Satélite: Starlink-Norte-B-Modificado (ID: SAT-ECU-0002) -> Conectado a la IP: 
 ============================================================
 ```
 
-Este simple ejemplo sienta las bases para la sesión de la siguiente hora (Ejemplo 2), donde enseñaremos a los estudiantes por qué la modificación directa de atributos (como hicimos hoy) puede ser peligrosa y cómo resolverlo utilizando **Encapsulamiento Básico** (atributos protegidos y privados).
