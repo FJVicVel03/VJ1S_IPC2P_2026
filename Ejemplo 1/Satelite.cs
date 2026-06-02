@@ -7,18 +7,18 @@ namespace Ejemplo1
     public class Satelite
     {
         // Campos públicos (accesibles y modificables directamente desde fuera de la clase)
-        public string Id;
-        public string Nombre;
-        public string EnlaceIp;
+        public string id;
+        public string nombre;
+        public string enlaceIP;
 
         /// <summary>
         /// Constructor para inicializar una nueva instancia de la clase Satelite.
         /// </summary>
         public Satelite(string id, string nombre, string enlaceIp)
         {
-            Id = id;
-            Nombre = nombre;
-            EnlaceIp = enlaceIp;
+            this.id = id;
+            this.nombre = nombre;
+            this.enlaceIP = enlaceIp;
         }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace Ejemplo1
         /// </summary>
         public string ObtenerDescripcion()
         {
-            return $"Satélite: {Nombre} (ID: {Id}) -> Conectado a la IP: {EnlaceIp}";
+            return $"Satélite: {nombre} (ID: {id}) -> Conectado a la IP: {enlaceIP}";
         }
     }
 }

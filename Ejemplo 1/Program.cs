@@ -1,29 +1,41 @@
-using System;
-using Ejemplo1;
+namespace Ejemplo1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("=================================");
+            Console.WriteLine("EJEMPLO NUMERO 1");
+            Console.WriteLine("=================================");
 
-Console.WriteLine("============================================================");
-Console.WriteLine("  EJEMPLO 1 C#: INTRODUCCIÓN A LA POO - CLASES Y OBJETOS");
-Console.WriteLine("============================================================");
+            //Creacion e instanciar objetos de la clase Satelite
+            Satelite satelite1 = new Satelite("S001", "Satelite 1", "127.0.0.1");
+            Satelite satelite2 = new Satelite("S002", "Satelite 2", "192.168.20");
+            Satelite satelite3 = new Satelite("S003", "Satelite 3", "124.123.54");
 
-// 1. Creación e instanciación de objetos de la clase Satelite
-// Se crean dos instancias independientes en memoria RAM
-Satelite sateliteA = new Satelite("SAT-ECU-0001", "Starlink-Norte-A", "127.0.0.1");
-Satelite sateliteB = new Satelite("SAT-ECU-0002", "Starlink-Norte-B", "10.0.0.50");
+            Console.WriteLine("Estado Inicial de los satelites creados");
+            Console.WriteLine(satelite1.ObtenerDescripcion());
+            Console.WriteLine(satelite2.ObtenerDescripcion());
+            Console.WriteLine(satelite3.ObtenerDescripcion());
+            Console.WriteLine();
 
-Console.WriteLine("\n[+] Estado inicial de los satélites creados:");
-Console.WriteLine(sateliteA.ObtenerDescripcion());
-Console.WriteLine(sateliteB.ObtenerDescripcion());
+            //Modificar los atributos de los satelites
+            satelite1.nombre = "Satelite 1 Modificado";
+            satelite1.enlaceIP = "127.10.0.1";
 
-// 2. Demostración de modificación directa de campos públicos
-// Al ser campos públicos, se pueden leer y modificar directamente desde fuera de la clase
-Console.WriteLine("\n[+] Modificando la dirección IP de red del satélite A...");
-sateliteA.EnlaceIp = "192.168.1.100";
+            satelite2.nombre = "Satelite 2 Modificado";
+            satelite2.enlaceIP = "192.24.20";
 
-Console.WriteLine("[+] Modificando el nombre asignado al satélite B...");
-sateliteB.Nombre = "Starlink-Norte-B-Modificado";
+            satelite3.nombre = "Satelite 3 Modificado";
+            satelite3.enlaceIP = "124.000.00";
 
-// 3. Mostrar el estado actualizado de los objetos
-Console.WriteLine("\n[+] Estado final de los satélites después de las modificaciones:");
-Console.WriteLine(sateliteA.ObtenerDescripcion());
-Console.WriteLine(sateliteB.ObtenerDescripcion());
-Console.WriteLine("============================================================\n");
+            Console.WriteLine("Estado Final de los satelites modificados");
+            Console.WriteLine(satelite1.ObtenerDescripcion());
+            Console.WriteLine(satelite2.ObtenerDescripcion());
+            Console.WriteLine(satelite3.ObtenerDescripcion());
+            Console.WriteLine();
+
+            
+        }
+    }
+}
