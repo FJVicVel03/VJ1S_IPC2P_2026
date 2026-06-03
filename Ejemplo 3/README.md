@@ -1,12 +1,11 @@
 # Ejemplo 3: Introducción a ASP.NET Core MVC y TDA Manual (Lista Simple)
 
-¡Bienvenido al **Ejemplo 3** del currículo progresivo en **C# y .NET 10**!
 
-Este ejemplo está diseñado para explicarse en una sesión de **aproximadamente una hora**. En esta lección, damos el salto de aplicaciones de consola a la **web** e introducimos el patrón arquitectónico **Modelo-Vista-Controlador (MVC)** utilizando ASP.NET Core, integrándolo con nuestra primera estructura de datos manual (**Lista Enlazada Simple**) construida con referencias en memoria RAM (sin colecciones nativas de .NET).
+En esta lección, damos el salto de aplicaciones de consola a la **web** e introducimos el patrón arquitectónico **Modelo-Vista-Controlador (MVC)** utilizando ASP.NET Core, integrándolo con nuestra primera estructura de datos manual (**Lista Enlazada Simple**) construida con referencias en memoria RAM (sin colecciones nativas de .NET).
 
 ---
 
-## 🎯 Objetivos de la Sesión
+##  Objetivos de la Sesión
 
 Al finalizar este ejemplo, los estudiantes comprenderán:
 1. **El Patrón MVC**: La separación de responsabilidades en una aplicación web:
@@ -34,7 +33,7 @@ La estructura del proyecto web contiene los directorios del patrón MVC:
 
 ---
 
-### 🛠️ ¿Cómo Crear esta Estructura Automáticamente?
+###  ¿Cómo Crear esta Estructura Automáticamente?
 
 En lugar de crear manualmente cada una de las carpetas (`Controllers`, `Models`, `Views`) y los archivos de configuración, el estándar en .NET es generar la plantilla base utilizando la interfaz de línea de comandos de .NET (CLI). 
 
@@ -52,7 +51,7 @@ dotnet new mvc -o "Ejemplo 3"
 
 ---
 
-## ⚙️ Conceptos Clave Explicados
+##  Conceptos Clave Explicados
 
 ### 1. El TDA Enlazado como Modelo de Vista
 
