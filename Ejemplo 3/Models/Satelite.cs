@@ -55,7 +55,7 @@ namespace Ejemplo_3.Models
 
         public string ObtenerDescripcion()
         {
-            return $"Satélite: {Nombre} (ID: {Id}) -> Conectado a la IP: {EnlaceIP}";
+            return "Nombre: " + nombre + " ID: " + id + " IP: " + enlaceIP;
         }
     }
 }
