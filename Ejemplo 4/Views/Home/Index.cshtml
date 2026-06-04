@@ -1,0 +1,140 @@
+@model Ejemplo_4.Models.ListaSatelites
+@{
+    ViewData["Title"] = "Ejemplo 4 - Ingesta XML";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <!-- Encabezado -->
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bold text-primary">OrbitNet-NetCore</h1>
+                <p class="lead text-muted">Ejemplo 4: Ingesta de Configuración XML, Consultas XPath y Seguridad XXE</p>
+                <div class="badge bg-secondary px-3 py-2">Estado: Simulación en Memoria RAM Activa</div>
+            </div>
+
+            <!-- Alertas de retroalimentación -->
+            @if (ViewBag.SuccessMessage != null)
+            {
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    @ViewBag.SuccessMessage
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            @if (ViewBag.WarningMessage != null)
+            {
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                    @ViewBag.WarningMessage
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            @if (ViewBag.ErrorMessage != null)
+            {
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <i class="bi bi-x-circle-fill me-2"></i>
+                    @ViewBag.ErrorMessage
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            <div class="row g-4 mb-5">
+                <!-- Tarjeta de Subida XML -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-3">
+                        <div class="card-header bg-primary text-white py-3">
+                            <h5 class="mb-0 fw-semibold">Carga Masiva de Configuración</h5>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <p class="text-muted small">Seleccione un archivo de configuración estructurado en formato XML para analizar sus nodos ecuatoriales y cargarlos en la lista enlazada.</p>
+                            
+                            <form asp-action="CargarXml" method="post" enctype="multipart/form-data" class="mt-3">
+                                <div class="mb-3">
+                                    <label class="form-label fw-semibold text-secondary">Archivo XML (.xml)</label>
+                                    <input type="file" name="archivoXml" class="form-control" accept=".xml" required />
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="bi bi-upload me-2"></i>Procesar Ingesta XML
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de Administración de Memoria -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-3">
+                        <div class="card-header bg-dark text-white py-3">
+                            <h5 class="mb-0 fw-semibold">Operaciones de Memoria RAM</h5>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <p class="text-muted small">Descargue el archivo de prueba oficial proporcionado por la cátedra para verificar el comportamiento de la validación o limpie la memoria RAM de la simulación.</p>
+                            
+                            <div class="d-flex gap-2 flex-column mt-3">
+                                <a href="~/datos_prueba.xml" download class="btn btn-outline-secondary w-100 text-start">
+                                    <i class="bi bi-download me-2 text-primary"></i>Descargar datos_prueba.xml
+                                </a>
+                                
+                                <form asp-action="Limpiar" method="post" class="w-100">
+                                    <button type="submit" class="btn btn-outline-danger w-100 text-start">
+                                        <i class="bi bi-trash-fill me-2"></i>Purgar Memoria RAM
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabla de Satélites del TDA -->
+            <div class="card shadow-sm border-0 rounded-3 overflow-hidden">
+                <div class="card-header bg-secondary text-white px-4 py-3 d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0 fw-semibold">Satélites en Memoria (TDA ListaSimpleSatelites)</h5>
+                    <span class="badge bg-light text-dark rounded-pill px-3">@Model.Tamano Elementos</span>
+                </div>
+                <div class="card-body p-4 bg-light">
+                    @if (Model.EstaVacia)
+                    {
+                        <div class="text-center py-5 text-muted">
+                            <i class="bi bi-folder-x display-4 text-secondary mb-3 d-block"></i>
+                            <p class="mb-0">No hay satélites registrados en memoria RAM. Cargue un archivo XML para comenzar.</p>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle mb-0 bg-white rounded-3 overflow-hidden shadow-sm">
+                                <thead class="table-dark text-uppercase fs-6">
+                                    <tr>
+                                        <th scope="col" class="px-4 py-3 text-secondary">ID Satélite</th>
+                                        <th scope="col" class="py-3 text-secondary">Nombre Asignado</th>
+                                        <th scope="col" class="py-3 text-secondary">Dirección IP</th>
+                                        <th scope="col" class="py-3 text-secondary">Descripción Física</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var satelite in Model.Recorrer())
+                                    {
+                                        <tr>
+                                            <td class="px-4 py-3 font-monospace fw-bold text-primary">@satelite.Id</td>
+                                            <td class="py-3 fw-semibold text-dark">@satelite.Nombre</td>
+                                            <td class="py-3">
+                                                <span class="badge bg-light text-dark font-monospace border px-2.5 py-1.5">
+                                                    @satelite.EnlaceIP
+                                                </span>
+                                            </td>
+                                            <td class="py-3 text-muted fs-7">@satelite.ObtenerDescripcion()</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

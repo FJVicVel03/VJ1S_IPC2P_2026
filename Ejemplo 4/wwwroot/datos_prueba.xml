@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<orbitnet>
+    <constelaciones_ecuatoriales>
+        <!-- Válido -->
+        <satelite id="SAT-ECU-0001">
+            <nombre>Starlink-Norte-A</nombre>
+            <enlace_ip>127.0.0.1</enlace_ip>
+        </satelite>
+        <!-- Válido -->
+        <satelite id="SAT-ECU-0002">
+            <nombre>Starlink-Norte-B</nombre>
+            <enlace_ip>10.0.0.50</enlace_ip>
+        </satelite>
+        <!-- Inválido para la propiedad EnlaceIP (IP sin puntos) -->
+        <satelite id="SAT-ECU-0003">
+            <nombre>Starlink-Norte-C-Invalido</nombre>
+            <enlace_ip>10-0-0-99</enlace_ip>
+        </satelite>
+        <!-- Inválido para la propiedad Nombre (nombre vacío) -->
+        <satelite id="SAT-ECU-0004">
+            <nombre> </nombre>
+            <enlace_ip>10.0.0.60</enlace_ip>
+        </satelite>
+    </constelaciones_ecuatoriales>
+</orbitnet>
