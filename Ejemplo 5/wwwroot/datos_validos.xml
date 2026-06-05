@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<orbitnet>
+    <constelaciones_ecuatoriales>
+        <!-- Todos son válidos y pasarán la validación RegEx -->
+        <satelite id="SAT-ECU-0010">
+            <nombre>Starlink-Norte-Alpha</nombre>
+            <enlace_ip>127.0.0.1</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0011">
+            <nombre>Starlink-Norte-Beta</nombre>
+            <enlace_ip>10.0.0.80</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0012">
+            <nombre>Polar-Norte-Gamma</nombre>
+            <enlace_ip>192.168.1.1</enlace_ip>
+        </satelite>
+    </constelaciones_ecuatoriales>
+</orbitnet>

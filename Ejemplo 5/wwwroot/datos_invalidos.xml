@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<orbitnet>
+    <constelaciones_ecuatoriales>
+        <!-- Válido -->
+        <satelite id="SAT-ECU-0100">
+            <nombre>Starlink-Sur-A</nombre>
+            <enlace_ip>127.0.0.1</enlace_ip>
+        </satelite>
+        <!-- Válido -->
+        <satelite id="SAT-ECU-0101">
+            <nombre>Starlink-Sur-B</nombre>
+            <enlace_ip>10.0.0.90</enlace_ip>
+        </satelite>
+        <!-- Inválido: ID no cumple el patrón SAT-(ECU|POL)-#### (tiene letras en lugar de dígitos) -->
+        <satelite id="SAT-ECU-XYZ1">
+            <nombre>Satélite Defectuoso ID</nombre>
+            <enlace_ip>192.168.1.1</enlace_ip>
+        </satelite>
+    </constelaciones_ecuatoriales>
+</orbitnet>
