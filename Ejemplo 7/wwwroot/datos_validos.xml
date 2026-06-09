@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<orbitnet>
+    <constelaciones_ecuatoriales>
+        <!-- Se mapearán a Fila = 0. Columna se deduce del ID -->
+        <satelite id="SAT-ECU-0010">
+            <nombre>Starlink-Alpha</nombre>
+            <enlace_ip>127.0.0.1</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0011">
+            <nombre>Starlink-Beta</nombre>
+            <enlace_ip>10.0.0.80</enlace_ip>
+        </satelite>
+    </constelaciones_ecuatoriales>
+    <constelaciones_polares>
+        <!-- Se mapearán a Fila = 1. Columna se deduce del ID -->
+        <satelite id="SAT-POL-0012">
+            <nombre>Polar-Gamma</nombre>
+            <enlace_ip>192.168.1.1</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0020">
+            <nombre>Polar-Delta</nombre>
+            <enlace_ip>10.0.0.50</enlace_ip>
+        </satelite>
+    </constelaciones_polares>
+</orbitnet>
