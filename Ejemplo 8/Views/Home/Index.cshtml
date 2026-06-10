@@ -1,0 +1,284 @@
+@model Ejemplo_8.Models.DashboardViewModel
+@{
+    ViewData["Title"] = "Ejemplo 8 - Matriz Dispersa con Controladores Modulares";
+}
+
+<div class="container py-4">
+    <!-- Encabezado Principal -->
+    <div class="text-center mb-5">
+        <h1 class="display-5 fw-bold text-primary">OrbitNet - Ejemplo 8</h1>
+        <p class="lead text-muted">Refactorización arquitectónica: División de responsabilidades y controladores modulares en ASP.NET Core MVC</p>
+        <div class="badge bg-secondary px-3 py-2">Estado: Simulación en Memoria RAM Activa</div>
+    </div>
+
+    <!-- Alertas de Retroalimentación -->
+    @if (ViewBag.SuccessMessage != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show shadow-sm" role="alert">
+            <i class="bi bi-check-circle-fill me-2"></i>
+            @ViewBag.SuccessMessage
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show shadow-sm" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+            @ViewBag.ErrorMessage
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <!-- Fila 1: Carga Masiva y Recursos de Prueba -->
+    <div class="row g-4 mb-5">
+        <!-- Carga Masiva XML -->
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0 rounded-3">
+                <div class="card-header bg-primary text-white py-3">
+                    <h5 class="mb-0 fw-semibold"><i class="bi bi-file-earmark-code-fill me-2"></i>Carga XML Transaccional (Matriz Dispersa)</h5>
+                </div>
+                <div class="card-body p-4 d-flex flex-column justify-content-between">
+                    <p class="text-muted small">
+                        Suba un archivo XML. Si al menos uno de los satélites no cumple con los patrones RegEx para ID o IP, o bien genera colisión en la matriz, la carga completa se abortará de forma segura (Rollback).
+                    </p>
+                    <form asp-controller="Xml" asp-action="CargarXml" method="post" enctype="multipart/form-data" class="mt-3">
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold text-secondary">Seleccionar archivo XML</label>
+                            <input type="file" name="archivoXml" class="form-control" accept=".xml" required />
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-shield-check me-2"></i>Iniciar Ingesta Masiva en Matriz
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recursos y Purgas -->
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0 rounded-3">
+                <div class="card-header bg-dark text-white py-3">
+                    <h5 class="mb-0 fw-semibold"><i class="bi bi-gear-fill me-2"></i>Administración de Datos</h5>
+                </div>
+                <div class="card-body p-4 d-flex flex-column justify-content-between">
+                    <div>
+                        <p class="text-muted small">Descargue archivos de prueba oficiales con constelaciones polares y ecuatoriales:</p>
+                        <div class="d-flex gap-2 flex-column">
+                            <a href="~/datos_validos.xml" download class="btn btn-outline-success text-start w-100">
+                                <i class="bi bi-file-earmark-check-fill me-2 text-success"></i>Descargar datos_validos.xml (Commit)
+                            </a>
+                            <a href="~/datos_invalidos.xml" download class="btn btn-outline-warning text-start w-100">
+                                <i class="bi bi-file-earmark-x-fill me-2 text-warning"></i>Descargar datos_invalidos.xml (Rollback)
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2 mt-4">
+                        <form asp-controller="Satelite" asp-action="LimpiarMatriz" method="post" class="flex-grow-1">
+                            <button type="submit" class="btn btn-outline-danger w-100">
+                                <i class="bi bi-trash-fill me-2"></i>Purgar Matriz Dispersa
+                            </button>
+                        </form>
+                        <form asp-controller="Logs" asp-action="LimpiarLogs" method="post" class="flex-grow-1">
+                            <button type="submit" class="btn btn-outline-secondary w-100">
+                                <i class="bi bi-journal-x me-2"></i>Purgar Logs
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fila 2: Inserción Manual, Eliminación y Consola -->
+    <div class="row g-4 mb-5">
+        <!-- Controles Manuales -->
+        <div class="col-md-5">
+            <div class="card shadow-sm border-0 rounded-3 mb-4">
+                <div class="card-header bg-secondary text-white py-3">
+                    <h5 class="mb-0 fw-semibold"><i class="bi bi-plus-circle-fill me-2"></i>Insertar Nodo Satelital</h5>
+                </div>
+                <div class="card-body p-4">
+                    <form asp-controller="Satelite" asp-action="InsertarNodo" method="post">
+                        <div class="row g-2 mb-3">
+                            <div class="col-6">
+                                <label class="form-label fw-semibold text-secondary small">Fila (Latitud / Y)</label>
+                                <input type="number" name="row" class="form-control" min="0" placeholder="0" required />
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label fw-semibold text-secondary small">Columna (Longitud / X)</label>
+                                <input type="number" name="col" class="form-control" min="0" placeholder="10" required />
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold text-secondary small">ID del Satélite</label>
+                            <input type="text" name="id" class="form-control font-monospace text-uppercase" placeholder="SAT-ECU-0001" required />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold text-secondary small">Nombre del Satélite</label>
+                            <input type="text" name="nombre" class="form-control" placeholder="AeroSat Beta" required />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold text-secondary small">Dirección IP (IPv4)</label>
+                            <input type="text" name="ip" class="form-control font-monospace" placeholder="192.168.1.10" required />
+                        </div>
+                        <div class="d-grid mt-4">
+                            <button type="submit" class="btn btn-secondary">
+                                <i class="bi bi-plus-lg me-2"></i>Insertar en Matriz
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card shadow-sm border-0 rounded-3">
+                <div class="card-header bg-danger text-white py-3">
+                    <h5 class="mb-0 fw-semibold"><i class="bi bi-trash-fill me-2"></i>Eliminar Nodo Satelital</h5>
+                </div>
+                <div class="card-body p-4">
+                    <form asp-controller="Satelite" asp-action="EliminarNodo" method="post">
+                        <div class="row g-2 mb-3 align-items-end">
+                            <div class="col-4">
+                                <label class="form-label fw-semibold text-secondary small">Fila (Y)</label>
+                                <input type="number" name="row" class="form-control" min="0" required />
+                            </div>
+                            <div class="col-4">
+                                <label class="form-label fw-semibold text-secondary small">Col (X)</label>
+                                <input type="number" name="col" class="form-control" min="0" required />
+                            </div>
+                            <div class="col-4 d-grid">
+                                <button type="submit" class="btn btn-danger">
+                                    <i class="bi bi-x-lg me-2"></i>Borrar
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Consola de Auditoría -->
+        <div class="col-md-7">
+            <div class="card shadow-sm border-0 rounded-3 h-100">
+                <div class="card-header bg-dark text-white py-3 d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0 fw-semibold"><i class="bi bi-terminal-fill me-2"></i>Consola de Auditoría (TDA LogAuditoria)</h5>
+                    <span class="badge bg-light text-dark rounded-pill px-3">@Model.Logs.Tamano eventos</span>
+                </div>
+                <div class="card-body p-3 bg-light">
+                    @if (Model.Logs.EstaVacia)
+                    {
+                        <div class="text-center py-5 text-muted">
+                            <i class="bi bi-journal-text display-6 text-secondary mb-2 d-block"></i>
+                            <p class="mb-0 small">Bitácora de auditoría vacía.</p>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="table-responsive" style="max-height: 400px; overflow-y: auto; font-family: 'JetBrains Mono', 'Consolas', monospace; font-size: 0.8rem;">
+                            <table class="table table-hover align-middle bg-white mb-0 rounded-2 overflow-hidden shadow-sm">
+                                <thead class="table-dark fs-7">
+                                    <tr>
+                                        <th scope="col" class="px-3 py-2.5">Timestamp</th>
+                                        <th scope="col" class="py-2.5">Tipo</th>
+                                        <th scope="col" class="py-2.5">Mensaje de Auditoría</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var log in Model.Logs.ObtenerTodos())
+                                    {
+                                        var filaClase = log.Tipo == "ERROR" ? "table-danger" : (log.Tipo == "ALERT" ? "table-warning" : "");
+                                        var badgeClase = log.Tipo == "ERROR" ? "bg-danger" : (log.Tipo == "ALERT" ? "bg-warning" : "bg-success");
+                                        <tr class="@filaClase">
+                                            <td class="px-3 py-2 text-muted" style="white-space: nowrap;">@log.Timestamp</td>
+                                            <td class="py-2"><span class="badge @badgeClase text-white">@log.Tipo</span></td>
+                                            <td class="py-2 text-dark font-monospace">@log.Mensaje</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fila 3: Visualización de Memoria (Graphviz) -->
+    <div class="row g-4 mb-5">
+        <div class="col-12">
+            <div class="card shadow-sm border-0 rounded-3">
+                <div class="card-header bg-success text-white py-3">
+                    <h5 class="mb-0 fw-semibold"><i class="bi bi-diagram-3-fill me-2"></i>Estructura de Memoria Física (Map Memory Layout)</h5>
+                </div>
+                <div class="card-body p-4 bg-light text-center">
+                    <p class="text-muted text-start small">Diagrama interactivo vectorial generado en caliente directamente desde los punteros `Up, Down, Left, Right` de la RAM:</p>
+                    
+                    <div class="border p-3 bg-white rounded overflow-auto shadow-sm" style="max-height: 550px;">
+                        @if (Model.Matriz.IsEmpty)
+                        {
+                            <div class="text-muted py-5 text-center">
+                                <i class="bi bi-cpu-fill display-5 mb-3 d-block text-secondary"></i>
+                                [Matriz Dispersa Vacía - Registre nodos para diagramar la memoria]
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="svg-container">
+                                @Html.Raw(Model.SvgDiagrama)
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fila 4: Listado de Nodos Activos -->
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="card shadow-sm border-0 rounded-3">
+                <div class="card-header bg-secondary text-white py-3 d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0 fw-semibold"><i class="bi bi-list-task me-2"></i>Nodos Satelitales Activos</h5>
+                    <span class="badge bg-light text-dark rounded-pill px-3">@Model.Matriz.Count satélites</span>
+                </div>
+                <div class="card-body p-3 bg-light">
+                    @if (Model.Matriz.IsEmpty)
+                    {
+                        <div class="text-center py-5 text-muted">
+                            <i class="bi bi-hdd display-6 text-secondary mb-2 d-block"></i>
+                            <p class="mb-0 small">No hay satélites registrados en la matriz.</p>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle bg-white mb-0 rounded-2 overflow-hidden shadow-sm">
+                                <thead class="table-dark fs-7">
+                                    <tr>
+                                        <th scope="col" class="px-3 py-2.5">Coordenadas (Y, X)</th>
+                                        <th scope="col" class="py-2.5">ID del Satélite</th>
+                                        <th scope="col" class="py-2.5">Nombre</th>
+                                        <th scope="col" class="py-2.5">Dirección IP</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="fs-7">
+                                    @foreach (var sat in Model.Matriz.ObtenerTodosLosNodos())
+                                    {
+                                        <tr>
+                                            <td class="px-3 py-2 font-monospace fw-bold text-secondary">(@sat.Row, @sat.Col)</td>
+                                            <td class="py-2 font-monospace fw-bold text-primary">@sat.Id</td>
+                                            <td class="py-2 fw-semibold text-dark">@sat.Nombre</td>
+                                            <td class="py-2"><span class="badge bg-light text-dark border font-monospace">@sat.IpAddress</span></td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

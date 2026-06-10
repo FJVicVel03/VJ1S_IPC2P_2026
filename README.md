@@ -72,23 +72,16 @@ A continuación se detalla la ruta de aprendizaje progresiva que conecta los fun
 
 | Sesión | Tema Principal | Conceptos Clave |
 | :---: | :--- | :--- |
-| **01** | **[Ejemplo 1](./Ejemplo%201/)** | Introducción a POO: Clases, Constructores e Instanciación con campos públicos. |
-| **02** | **Ejemplo 2** | Encapsulamiento: Visibilidad privada (`private`) y métodos Get/Set clásicos. |
-| **03** | **Ejemplo 3** | Propiedades en C#: Atajos automáticos `{ get; set; }` y descriptores lógicos. |
-| **04** | **Ejemplo 4** | Nodos Manuales: Enlace autorreferenciado a nivel físico en memoria. |
-| **05** | **Ejemplo 5** | TDA Lista Simple (Inserción): Construcción desde cero de estructuras lineales. |
-| **06** | **Ejemplo 6** | TDA Lista Simple (Recorrido): Implementación de iteración manual de punteros. |
-| **07** | **Ejemplo 7** | Ingesta XML: Lectura de archivos con `XmlDocument` sin XPath. |
-| **08** | **Ejemplo 8** | XPath en .NET: Consultas dirigidas mediante selectores `SelectNodes`. |
-| **09** | **Ejemplo 9** | Expresiones Regulares: Validaciones lógicas con `System.Text.RegularExpressions`. |
-| **10** | **Ejemplo 10** | XML + RegEx: Validaciones complejas previas a la creación de instancias. |
-| **11** | **Ejemplo 11** | Carga Transaccional: Volcado atómico del XML hacia el TDA Lista Simple en RAM. |
-| **12** | **Ejemplo 12** | TDA Árbol Binario de Búsqueda: Creación de árboles y colas de prioridad (ABB). |
-| **13** | **Ejemplo 13** | TDA Matriz Dispersa Ortogonal: Concepto de punteros bidireccionales. |
-| **14** | **Ejemplo 14** | Generador Graphviz: Estructura del lenguaje DOT y formato gráfico. |
-| **15** | **Ejemplo 15** | Mapa de Memoria DOT: Renderizado visual de celdas físicas RAM (`shape=record`). |
-| **16** | **Ejemplo 16** | ASP.NET Core MVC: Estructura web, rutas, controladores y vistas Razor `.cshtml`. |
-| **17** | **Ejemplo 17** | Endpoints REST en .NET: Serialización de modelos a formato dinámico JSON. |
-| **18** | **Ejemplo 18** | Servidores Multi-Puerto: Levantamiento de múltiples instancias Kestrel locales. |
-| **19** | **Ejemplo 19** | Cliente HTTP en C#: Peticiones síncronas entre servidores mediante `HttpClient`. |
-| **20** | **Ejemplo 20** | Simulación Integrada: Enrutamiento cross-instance con Basic Authentication. |
+| **01** | **[Ejemplo 1](./Ejemplo%201/)** | Introducción a POO C#: Clases, constructores e instanciación de objetos. |
+| **02** | **[Ejemplo 2](./Ejemplo%202/)** | Encapsulamiento: Visibilidad privada y relaciones físicas entre objetos. |
+| **03** | **[Ejemplo 3](./Ejemplo%203/)** | Introducción a ASP.NET Core MVC: Vistas Razor y el TDA manual Lista Simple. |
+| **04** | **[Ejemplo 4](./Ejemplo%204/)** | Ingesta XML: Lectura de configuraciones y consultas dirigidas con XPath. |
+| **05** | **[Ejemplo 5](./Ejemplo%205/)** | RegEx y Transacciones: Validaciones de sintaxis e ingesta atómica con Rollback. |
+| **06** | **[Ejemplo 6](./Ejemplo%206/)** | TDA Árbol AVL: Almacenamiento auto-balanceado dinámico sin librerías genéricas. |
+| **07** | **[Ejemplo 7](./Ejemplo%207/)** | TDA Matriz Dispersa: Malla ortogonal bidireccional y renderizado Graphviz SVG. |
+| **08** | **[Ejemplo 8](./Ejemplo%208/)** | Arquitectura Limpia MVC: Refactorización y división en controladores modulares. |
+| **09** | **Ejemplo 9** | REST API básica: Endpoints en controladores para serializar estados de memoria en JSON. |
+| **10** | **Ejemplo 10** | Comunicación Inter-Proceso: Cliente HTTP (`HttpClient`) para envío de transacciones. |
+| **11** | **Ejemplo 11** | Simulación Distribuida: Configuración de múltiples puertos Kestrel. |
+| **12** | **Ejemplo 12** | Seguridad y Auditoría: Autenticación básica manual y bitácora de red distribuida. |
+| **13-20**| **Ejemplos Consolidados** | Prácticas integradas de laboratorio y preparación del Proyecto Único. |
