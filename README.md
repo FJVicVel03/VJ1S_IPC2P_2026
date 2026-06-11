@@ -1,7 +1,7 @@
 # Introducción a la Programación y Computación 2 — Sección P
 ## Laboratorio - Vacaciones de Junio 2026
 
-Este repositorio contiene los ejemplos prácticos y progresivos desarrollados a lo largo de las 20 sesiones de aprendizaje para guiar a los estudiantes en la correcta realización del Proyecto Único del laboratorio (**OrbitNet‑NetCore**).
+Este repositorio contiene los ejemplos prácticos y progresivos desarrollados a lo largo de las 20 sesiones de aprendizaje para guiar a los estudiantes en la correcta realización del Proyecto Único del laboratorio (**OrbitNet‑NetCore**). asdasdas
 
 ---
 
@@ -70,18 +70,18 @@ Indispensable para generar los diagramas visuales en memoria de las estructuras 
 
 A continuación se detalla la ruta de aprendizaje progresiva que conecta los fundamentos básicos hasta la arquitectura del proyecto final:
 
-| Sesión | Tema Principal | Conceptos Clave |
-| :---: | :--- | :--- |
-| **01** | **[Ejemplo 1](./Ejemplo%201/)** | Introducción a POO C#: Clases, constructores e instanciación de objetos. |
-| **02** | **[Ejemplo 2](./Ejemplo%202/)** | Encapsulamiento: Visibilidad privada y relaciones físicas entre objetos. |
-| **03** | **[Ejemplo 3](./Ejemplo%203/)** | Introducción a ASP.NET Core MVC: Vistas Razor y el TDA manual Lista Simple. |
-| **04** | **[Ejemplo 4](./Ejemplo%204/)** | Ingesta XML: Lectura de configuraciones y consultas dirigidas con XPath. |
-| **05** | **[Ejemplo 5](./Ejemplo%205/)** | RegEx y Transacciones: Validaciones de sintaxis e ingesta atómica con Rollback. |
-| **06** | **[Ejemplo 6](./Ejemplo%206/)** | TDA Árbol AVL: Almacenamiento auto-balanceado dinámico sin librerías genéricas. |
-| **07** | **[Ejemplo 7](./Ejemplo%207/)** | TDA Matriz Dispersa: Malla ortogonal bidireccional y renderizado Graphviz SVG. |
-| **08** | **[Ejemplo 8](./Ejemplo%208/)** | Arquitectura Limpia MVC: Refactorización y división en controladores modulares. |
-| **09** | **Ejemplo 9** | REST API básica: Endpoints en controladores para serializar estados de memoria en JSON. |
-| **10** | **Ejemplo 10** | Comunicación Inter-Proceso: Cliente HTTP (`HttpClient`) para envío de transacciones. |
-| **11** | **Ejemplo 11** | Simulación Distribuida: Configuración de múltiples puertos Kestrel. |
-| **12** | **Ejemplo 12** | Seguridad y Auditoría: Autenticación básica manual y bitácora de red distribuida. |
-| **13-20**| **Ejemplos Consolidados** | Prácticas integradas de laboratorio y preparación del Proyecto Único. |
+|  Sesión   | Tema Principal                  | Conceptos Clave                                                                         |
+| :-------: | :------------------------------ | :-------------------------------------------------------------------------------------- |
+|  **01**   | **[Ejemplo 1](./Ejemplo%201/)** | Introducción a POO C#: Clases, constructores e instanciación de objetos.                |
+|  **02**   | **[Ejemplo 2](./Ejemplo%202/)** | Encapsulamiento: Visibilidad privada y relaciones físicas entre objetos.                |
+|  **03**   | **[Ejemplo 3](./Ejemplo%203/)** | Introducción a ASP.NET Core MVC: Vistas Razor y el TDA manual Lista Simple.             |
+|  **04**   | **[Ejemplo 4](./Ejemplo%204/)** | Ingesta XML: Lectura de configuraciones y consultas dirigidas con XPath.                |
+|  **05**   | **[Ejemplo 5](./Ejemplo%205/)** | RegEx y Transacciones: Validaciones de sintaxis e ingesta atómica con Rollback.         |
+|  **06**   | **[Ejemplo 6](./Ejemplo%206/)** | TDA Árbol AVL: Almacenamiento auto-balanceado dinámico sin librerías genéricas.         |
+|  **07**   | **[Ejemplo 7](./Ejemplo%207/)** | TDA Matriz Dispersa: Malla ortogonal bidireccional y renderizado Graphviz SVG.          |
+|  **08**   | **[Ejemplo 8](./Ejemplo%208/)** | Arquitectura Limpia MVC: Refactorización y división en controladores modulares.         |
+|  **09**   | **[Ejemplo 9](./Ejemplo%209/)** | REST API básica: Endpoints en controladores para serializar estados de memoria en JSON. |
+|  **10**   | **Ejemplo 10**                  | Comunicación Inter-Proceso: Cliente HTTP (`HttpClient`) para envío de transacciones.    |
+|  **11**   | **Ejemplo 11**                  | Simulación Distribuida: Configuración de múltiples puertos Kestrel.                     |
+|  **12**   | **Ejemplo 12**                  | Seguridad y Auditoría: Autenticación básica manual y bitácora de red distribuida.       |
+| **13-20** | **Ejemplos Consolidados**       | Prácticas integradas de laboratorio y preparación del Proyecto Único.                   |
