@@ -81,7 +81,14 @@ A continuación se detalla la ruta de aprendizaje progresiva que conecta los fun
 |  **07**   | **[Ejemplo 7](./Ejemplo%207/)** | TDA Matriz Dispersa: Malla ortogonal bidireccional y renderizado Graphviz SVG.          |
 |  **08**   | **[Ejemplo 8](./Ejemplo%208/)** | Arquitectura Limpia MVC: Refactorización y división en controladores modulares.         |
 |  **09**   | **[Ejemplo 9](./Ejemplo%209/)** | REST API básica: Endpoints en controladores para serializar estados de memoria en JSON. |
-|  **10**   | **Ejemplo 10**                  | Comunicación Inter-Proceso: Cliente HTTP (`HttpClient`) para envío de transacciones.    |
-|  **11**   | **Ejemplo 11**                  | Simulación Distribuida: Configuración de múltiples puertos Kestrel.                     |
-|  **12**   | **Ejemplo 12**                  | Seguridad y Auditoría: Autenticación básica manual y bitácora de red distribuida.       |
-| **13-20** | **Ejemplos Consolidados**       | Prácticas integradas de laboratorio y preparación del Proyecto Único.                   |
+|  **10**   | **[Ejemplo 10](./Ejemplo%2010/)** | Comunicación Inter-Proceso: Cliente HTTP (`HttpClient`) para consumo de APIs REST JSON. |
+|  **11**   | **Ejemplo 11**                  | Simulación Distribuida: Configuración Multi-Puerto de Kestrel en Program.cs y launchSettings. |
+|  **12**   | **Ejemplo 12**                  | Seguridad de Red: Autenticación HTTP Básica Manual decodificando cabeceras Base64.       |
+|  **13**   | **Ejemplo 13**                  | TDA Buffer de Mensajes: Árbol Binario de Búsqueda (ABB) como Cola de Prioridad.          |
+|  **14**   | **Ejemplo 14**                  | Enrutamiento Lógico: Algoritmo de saltos ortogonales sobre punteros de la Matriz Dispersa. |
+|  **15**   | **Ejemplo 15**                  | Graphviz Tracer: Reporte dinámico de trazabilidad de ruta de retransmisión (Relay Route). |
+|  **16**   | **Ejemplo 16**                  | Graphviz Densidad: Tablas tabulares de capacidad y estado de buffers con HTML Labels.    |
+|  **17**   | **Ejemplo 17**                  | Motor de Simulación: Rotación orbital cíclica de coordenadas y despacho por Ticks.       |
+|  **18**   | **Ejemplo 18**                  | Calidad de Software: Banco de pruebas unitarias automatizadas con framework xUnit.       |
+|  **19**   | **Ejemplo 19**                  | Seguridad OWASP: Mitigación de inyección XML (XXE) y sanitización contra ataques XSS.     |
+|  **20**   | **Ejemplo 20**                  | Plantilla Consolidada: Integración final de la arquitectura en N-Capas de la solución.   |

@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<orbitnet>
+    <constelaciones_ecuatoriales>
+        <satelite id="SAT-ECU-0010">
+            <nombre>Starlink-10</nombre>
+            <enlace_ip>10.0.0.10</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0011">
+            <nombre>Starlink-11</nombre>
+            <enlace_ip>10.0.0.11</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0012">
+            <nombre>Starlink-12</nombre>
+            <enlace_ip>10.0.0.12</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0013">
+            <nombre>Starlink-13</nombre>
+            <enlace_ip>10.0.0.13</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0014">
+            <nombre>Starlink-14</nombre>
+            <enlace_ip>10.0.0.14</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0015">
+            <nombre>Starlink-15</nombre>
+            <enlace_ip>10.0.0.15</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0016">
+            <nombre>Starlink-16</nombre>
+            <enlace_ip>10.0.0.16</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0017">
+            <nombre>Starlink-17</nombre>
+            <enlace_ip>10.0.0.17</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0018">
+            <nombre>Starlink-18</nombre>
+            <enlace_ip>10.0.0.18</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0019">
+            <nombre>Starlink-19</nombre>
+            <enlace_ip>10.0.0.19</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0020">
+            <nombre>Starlink-20</nombre>
+            <enlace_ip>10.0.0.20</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0021">
+            <nombre>Starlink-21</nombre>
+            <enlace_ip>10.0.0.21</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0022">
+            <nombre>Starlink-22</nombre>
+            <enlace_ip>10.0.0.22</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0023">
+            <nombre>Starlink-23</nombre>
+            <enlace_ip>10.0.0.23</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0024">
+            <nombre>Starlink-24</nombre>
+            <enlace_ip>10.0.0.24</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0025">
+            <nombre>Starlink-25</nombre>
+            <enlace_ip>10.0.0.25</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0026">
+            <nombre>Starlink-26</nombre>
+            <enlace_ip>10.0.0.26</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0027">
+            <nombre>Starlink-27</nombre>
+            <enlace_ip>10.0.0.27</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0028">
+            <nombre>Starlink-28</nombre>
+            <enlace_ip>10.0.0.28</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0029">
+            <nombre>Starlink-29</nombre>
+            <enlace_ip>10.0.0.29</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0030">
+            <nombre>Starlink-30</nombre>
+            <enlace_ip>10.0.0.30</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0031">
+            <nombre>Starlink-31</nombre>
+            <enlace_ip>10.0.0.31</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0032">
+            <nombre>Starlink-32</nombre>
+            <enlace_ip>10.0.0.32</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0033">
+            <nombre>Starlink-33</nombre>
+            <enlace_ip>10.0.0.33</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0034">
+            <nombre>Starlink-34</nombre>
+            <enlace_ip>10.0.0.34</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0035">
+            <nombre>Starlink-35</nombre>
+            <enlace_ip>10.0.0.35</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0036">
+            <nombre>Starlink-36</nombre>
+            <enlace_ip>10.0.0.36</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0037">
+            <nombre>Starlink-37</nombre>
+            <enlace_ip>10.0.0.37</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0038">
+            <nombre>Starlink-38</nombre>
+            <enlace_ip>10.0.0.38</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0039">
+            <nombre>Starlink-39</nombre>
+            <enlace_ip>10.0.0.39</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0040">
+            <nombre>Starlink-40</nombre>
+            <enlace_ip>10.0.0.40</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0041">
+            <nombre>Starlink-41</nombre>
+            <enlace_ip>10.0.0.41</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0042">
+            <nombre>Starlink-42</nombre>
+            <enlace_ip>10.0.0.42</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0043">
+            <nombre>Starlink-43</nombre>
+            <enlace_ip>10.0.0.43</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0044">
+            <nombre>Starlink-44</nombre>
+            <enlace_ip>10.0.0.44</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0045">
+            <nombre>Starlink-45</nombre>
+            <enlace_ip>10.0.0.45</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0046">
+            <nombre>Starlink-46</nombre>
+            <enlace_ip>10.0.0.46</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0047">
+            <nombre>Starlink-47</nombre>
+            <enlace_ip>10.0.0.47</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0048">
+            <nombre>Starlink-48</nombre>
+            <enlace_ip>10.0.0.48</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0049">
+            <nombre>Starlink-49</nombre>
+            <enlace_ip>10.0.0.49</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0050">
+            <nombre>Starlink-50</nombre>
+            <enlace_ip>10.0.0.50</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0051">
+            <nombre>Starlink-51</nombre>
+            <enlace_ip>10.0.0.51</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0052">
+            <nombre>Starlink-52</nombre>
+            <enlace_ip>10.0.0.52</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0053">
+            <nombre>Starlink-53</nombre>
+            <enlace_ip>10.0.0.53</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0054">
+            <nombre>Starlink-54</nombre>
+            <enlace_ip>10.0.0.54</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0055">
+            <nombre>Starlink-55</nombre>
+            <enlace_ip>10.0.0.55</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0056">
+            <nombre>Starlink-56</nombre>
+            <enlace_ip>10.0.0.56</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0057">
+            <nombre>Starlink-57</nombre>
+            <enlace_ip>10.0.0.57</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0058">
+            <nombre>Starlink-58</nombre>
+            <enlace_ip>10.0.0.58</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0059">
+            <nombre>Starlink-59</nombre>
+            <enlace_ip>10.0.0.59</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0060">
+            <nombre>Starlink-60</nombre>
+            <enlace_ip>10.0.0.60</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0061">
+            <nombre>Starlink-61</nombre>
+            <enlace_ip>10.0.0.61</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0062">
+            <nombre>Starlink-62</nombre>
+            <enlace_ip>10.0.0.62</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0063">
+            <nombre>Starlink-63</nombre>
+            <enlace_ip>10.0.0.63</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0064">
+            <nombre>Starlink-64</nombre>
+            <enlace_ip>10.0.0.64</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0065">
+            <nombre>Starlink-65</nombre>
+            <enlace_ip>10.0.0.65</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0066">
+            <nombre>Starlink-66</nombre>
+            <enlace_ip>10.0.0.66</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0067">
+            <nombre>Starlink-67</nombre>
+            <enlace_ip>10.0.0.67</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0068">
+            <nombre>Starlink-68</nombre>
+            <enlace_ip>10.0.0.68</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0069">
+            <nombre>Starlink-69</nombre>
+            <enlace_ip>10.0.0.69</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0070">
+            <nombre>Starlink-70</nombre>
+            <enlace_ip>10.0.0.70</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0071">
+            <nombre>Starlink-71</nombre>
+            <enlace_ip>10.0.0.71</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0072">
+            <nombre>Starlink-72</nombre>
+            <enlace_ip>10.0.0.72</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0073">
+            <nombre>Starlink-73</nombre>
+            <enlace_ip>10.0.0.73</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0074">
+            <nombre>Starlink-74</nombre>
+            <enlace_ip>10.0.0.74</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0075">
+            <nombre>Starlink-75</nombre>
+            <enlace_ip>10.0.0.75</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0076">
+            <nombre>Starlink-76</nombre>
+            <enlace_ip>10.0.0.76</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0077">
+            <nombre>Starlink-77</nombre>
+            <enlace_ip>10.0.0.77</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0078">
+            <nombre>Starlink-78</nombre>
+            <enlace_ip>10.0.0.78</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0079">
+            <nombre>Starlink-79</nombre>
+            <enlace_ip>10.0.0.79</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0080">
+            <nombre>Starlink-80</nombre>
+            <enlace_ip>10.0.0.80</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0081">
+            <nombre>Starlink-81</nombre>
+            <enlace_ip>10.0.0.81</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0082">
+            <nombre>Starlink-82</nombre>
+            <enlace_ip>10.0.0.82</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0083">
+            <nombre>Starlink-83</nombre>
+            <enlace_ip>10.0.0.83</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0084">
+            <nombre>Starlink-84</nombre>
+            <enlace_ip>10.0.0.84</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0085">
+            <nombre>Starlink-85</nombre>
+            <enlace_ip>10.0.0.85</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0086">
+            <nombre>Starlink-86</nombre>
+            <enlace_ip>10.0.0.86</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0087">
+            <nombre>Starlink-87</nombre>
+            <enlace_ip>10.0.0.87</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0088">
+            <nombre>Starlink-88</nombre>
+            <enlace_ip>10.0.0.88</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0089">
+            <nombre>Starlink-89</nombre>
+            <enlace_ip>10.0.0.89</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0090">
+            <nombre>Starlink-90</nombre>
+            <enlace_ip>10.0.0.90</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0091">
+            <nombre>Starlink-91</nombre>
+            <enlace_ip>10.0.0.91</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0092">
+            <nombre>Starlink-92</nombre>
+            <enlace_ip>10.0.0.92</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0093">
+            <nombre>Starlink-93</nombre>
+            <enlace_ip>10.0.0.93</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0094">
+            <nombre>Starlink-94</nombre>
+            <enlace_ip>10.0.0.94</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0095">
+            <nombre>Starlink-95</nombre>
+            <enlace_ip>10.0.0.95</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0096">
+            <nombre>Starlink-96</nombre>
+            <enlace_ip>10.0.0.96</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0097">
+            <nombre>Starlink-97</nombre>
+            <enlace_ip>10.0.0.97</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0098">
+            <nombre>Starlink-98</nombre>
+            <enlace_ip>10.0.0.98</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0099">
+            <nombre>Starlink-99</nombre>
+            <enlace_ip>10.0.0.99</enlace_ip>
+        </satelite>
+        <satelite id="SAT-ECU-0100">
+            <nombre>Starlink-100</nombre>
+            <enlace_ip>10.0.0.100</enlace_ip>
+        </satelite>
+    </constelaciones_ecuatoriales>
+    <constelaciones_polares>
+
+        <satelite id="SAT-POL-0012">
+            <nombre>Polar-12</nombre>
+            <enlace_ip>192.168.1.12</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0014">
+            <nombre>Polar-14</nombre>
+            <enlace_ip>192.168.1.14</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0016">
+            <nombre>Polar-16</nombre>
+            <enlace_ip>192.168.1.16</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0018">
+            <nombre>Polar-18</nombre>
+            <enlace_ip>192.168.1.18</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0020">
+            <nombre>Polar-20</nombre>
+            <enlace_ip>192.168.1.20</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0022">
+            <nombre>Polar-22</nombre>
+            <enlace_ip>192.168.1.22</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0024">
+            <nombre>Polar-24</nombre>
+            <enlace_ip>192.168.1.24</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0026">
+            <nombre>Polar-26</nombre>
+            <enlace_ip>192.168.1.26</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0028">
+            <nombre>Polar-28</nombre>
+            <enlace_ip>192.168.1.28</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0030">
+            <nombre>Polar-30</nombre>
+            <enlace_ip>192.168.1.30</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0032">
+            <nombre>Polar-32</nombre>
+            <enlace_ip>192.168.1.32</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0034">
+            <nombre>Polar-34</nombre>
+            <enlace_ip>192.168.1.34</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0036">
+            <nombre>Polar-36</nombre>
+            <enlace_ip>192.168.1.36</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0038">
+            <nombre>Polar-38</nombre>
+            <enlace_ip>192.168.1.38</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0040">
+            <nombre>Polar-40</nombre>
+            <enlace_ip>192.168.1.40</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0042">
+            <nombre>Polar-42</nombre>
+            <enlace_ip>192.168.1.42</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0044">
+            <nombre>Polar-44</nombre>
+            <enlace_ip>192.168.1.44</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0046">
+            <nombre>Polar-46</nombre>
+            <enlace_ip>192.168.1.46</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0048">
+            <nombre>Polar-48</nombre>
+            <enlace_ip>192.168.1.48</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0050">
+            <nombre>Polar-50</nombre>
+            <enlace_ip>192.168.1.50</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0052">
+            <nombre>Polar-52</nombre>
+            <enlace_ip>192.168.1.52</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0054">
+            <nombre>Polar-54</nombre>
+            <enlace_ip>192.168.1.54</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0056">
+            <nombre>Polar-56</nombre>
+            <enlace_ip>192.168.1.56</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0058">
+            <nombre>Polar-58</nombre>
+            <enlace_ip>192.168.1.58</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0060">
+            <nombre>Polar-60</nombre>
+            <enlace_ip>192.168.1.60</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0062">
+            <nombre>Polar-62</nombre>
+            <enlace_ip>192.168.1.62</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0064">
+            <nombre>Polar-64</nombre>
+            <enlace_ip>192.168.1.64</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0066">
+            <nombre>Polar-66</nombre>
+            <enlace_ip>192.168.1.66</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0068">
+            <nombre>Polar-68</nombre>
+            <enlace_ip>192.168.1.68</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0070">
+            <nombre>Polar-70</nombre>
+            <enlace_ip>192.168.1.70</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0072">
+            <nombre>Polar-72</nombre>
+            <enlace_ip>192.168.1.72</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0074">
+            <nombre>Polar-74</nombre>
+            <enlace_ip>192.168.1.74</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0076">
+            <nombre>Polar-76</nombre>
+            <enlace_ip>192.168.1.76</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0078">
+            <nombre>Polar-78</nombre>
+            <enlace_ip>192.168.1.78</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0080">
+            <nombre>Polar-80</nombre>
+            <enlace_ip>192.168.1.80</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0082">
+            <nombre>Polar-82</nombre>
+            <enlace_ip>192.168.1.82</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0084">
+            <nombre>Polar-84</nombre>
+            <enlace_ip>192.168.1.84</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0086">
+            <nombre>Polar-86</nombre>
+            <enlace_ip>192.168.1.86</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0088">
+            <nombre>Polar-88</nombre>
+            <enlace_ip>192.168.1.88</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0090">
+            <nombre>Polar-90</nombre>
+            <enlace_ip>192.168.1.90</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0092">
+            <nombre>Polar-92</nombre>
+            <enlace_ip>192.168.1.92</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0094">
+            <nombre>Polar-94</nombre>
+            <enlace_ip>192.168.1.94</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0096">
+            <nombre>Polar-96</nombre>
+            <enlace_ip>192.168.1.96</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0098">
+            <nombre>Polar-98</nombre>
+            <enlace_ip>192.168.1.98</enlace_ip>
+        </satelite>
+        <satelite id="SAT-POL-0100">
+            <nombre>Polar-100</nombre>
+            <enlace_ip>192.168.1.100</enlace_ip>
+        </satelite>
+    </constelaciones_polares>
+</orbitnet>
+
