@@ -82,7 +82,7 @@ A continuación se detalla la ruta de aprendizaje progresiva que conecta los fun
 |  **08**   | **[Ejemplo 8](./Ejemplo%208/)** | Arquitectura Limpia MVC: Refactorización y división en controladores modulares.         |
 |  **09**   | **[Ejemplo 9](./Ejemplo%209/)** | REST API básica: Endpoints en controladores para serializar estados de memoria en JSON. |
 |  **10**   | **[Ejemplo 10](./Ejemplo%2010/)** | Comunicación Inter-Proceso: Cliente HTTP (`HttpClient`) para consumo de APIs REST JSON. |
-|  **11**   | **Ejemplo 11**                  | Simulación Distribuida: Configuración Multi-Puerto de Kestrel en Program.cs y launchSettings. |
+|  **11**   | **[Ejemplo 11](./Ejemplo%2011/)** | Ingesta XML Completa: Parsing transaccional de constelaciones, orbitas polares (AVL) y antenas. |
 |  **12**   | **Ejemplo 12**                  | Seguridad de Red: Autenticación HTTP Básica Manual decodificando cabeceras Base64.       |
 |  **13**   | **Ejemplo 13**                  | TDA Buffer de Mensajes: Árbol Binario de Búsqueda (ABB) como Cola de Prioridad.          |
 |  **14**   | **Ejemplo 14**                  | Enrutamiento Lógico: Algoritmo de saltos ortogonales sobre punteros de la Matriz Dispersa. |
