@@ -1,0 +1,50 @@
+@model EjemploMVC.Models.Product
+
+@{
+    ViewData["Title"] = "Eliminar Producto";
+}
+
+<div class="animate-fade-in" style="max-width: 550px; margin: 0 auto;">
+    <div class="mb-4">
+        <a asp-action="Index" class="btn btn-link text-decoration-none p-0 d-flex align-items-center gap-1 text-secondary">
+            <i class="bi bi-arrow-left"></i> Volver al Catálogo
+        </a>
+        <h1 class="fw-bold text-danger mt-2">¿Eliminar Producto?</h1>
+        <p class="text-muted">Esta acción no se puede deshacer de forma sencilla. Por favor, confirma si deseas borrar permanentemente este artículo.</p>
+    </div>
+
+    <div class="card border-danger border-opacity-25 shadow-sm">
+        <div class="card-body p-4">
+            <div class="alert alert-danger d-flex align-items-start gap-2 border-0 bg-danger bg-opacity-10 text-danger-emphasis mb-4" role="alert">
+                <i class="bi bi-exclamation-triangle-fill fs-5 mt-1"></i>
+                <div>
+                    <h4 class="alert-heading fw-bold mb-1">Advertencia de Eliminación</h4>
+                    Se eliminará toda la información relacionada con el producto <strong>@Model.Nombre</strong>.
+                </div>
+            </div>
+
+            <div class="row g-3 mb-4">
+                <div class="col-6">
+                    <span class="text-secondary small">Nombre del Producto</span>
+                    <div class="fw-semibold text-dark">@Model.Nombre</div>
+                </div>
+                <div class="col-6">
+                    <span class="text-secondary small">Precio</span>
+                    <div class="fw-semibold text-dark">@Model.Precio.ToString("C2")</div>
+                </div>
+                <div class="col-6">
+                    <span class="text-secondary small">Stock Actual</span>
+                    <div class="fw-semibold text-dark">@Model.Stock unidades</div>
+                </div>
+            </div>
+
+            <form asp-action="Delete" class="d-flex gap-2 justify-content-end border-top pt-4">
+                <input type="hidden" asp-for="Id" />
+                <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                <button type="submit" class="btn btn-danger d-flex align-items-center gap-2">
+                    <i class="bi bi-trash-fill"></i> Confirmar Eliminación
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
