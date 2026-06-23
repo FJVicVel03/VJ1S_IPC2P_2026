@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<orbitnet> 
+    <constelaciones_ecuatoriales> 
+        <satelite id="SAT-ECU-0001"> 
+            <nombre>Starlink-Norte-A</nombre> 
+            <enlace_ip>127.0.0.1</enlace_ip> 
+        </satelite> 
+        <satelite id="SAT-ECU-0002"> 
+            <nombre>Starlink-Norte-B</nombre> 
+            <enlace_ip>127.0.0.1</enlace_ip> 
+        </satelite> 
+    </constelaciones_ecuatoriales> 
+    <orbitas_polares> 
+        <polar id="POLAR-NORTE-S"> 
+            <satelite id="SAT-POL-1001"> 
+                <nombre>Polar-Norte-1</nombre> 
+                <frecuencia>450.15</frecuencia> 
+            </satelite> 
+            <satelite id="SAT-POL-1002"> 
+                <nombre>Polar-Norte-2</nombre> 
+                <frecuencia>450.30</frecuencia> 
+            </satelite> 
+        </polar> 
+    </orbitas_polares> 
+    <antenas_terrestres> 
+        <antena id="ANT-GTM-401"> 
+            <nombre>Estación Central USAC Edificio T3</nombre> 
+            <coordenadas>14.5891,-90.5514</coordenadas> 
+            <ip_nodo>10.0.0.50</ip_nodo> 
+        </antena> 
+    </antenas_terrestres>
+</orbitnet>

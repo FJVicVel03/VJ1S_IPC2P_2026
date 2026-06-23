@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<orbitnet> 
+    <constelaciones_ecuatoriales> 
+        <satelite id="SAT-ECU-0010"> 
+            <nombre>Starlink-Ecuatorial-10</nombre> 
+            <enlace_ip>10.0.0.10</enlace_ip> 
+        </satelite> 
+        <satelite id="SAT-ECU-0020"> 
+            <nombre>Starlink-Ecuatorial-20</nombre> 
+            <enlace_ip>10.0.0.20</enlace_ip> 
+        </satelite> 
+        <satelite id="SAT-ECU-0030"> 
+            <nombre>Starlink-Ecuatorial-30</nombre> 
+            <enlace_ip>10.0.0.30</enlace_ip> 
+        </satelite> 
+        <satelite id="SAT-ECU-0040"> 
+            <nombre>Starlink-Ecuatorial-40</nombre> 
+            <enlace_ip>10.0.0.40</enlace_ip> 
+        </satelite> 
+    </constelaciones_ecuatoriales> 
+    <orbitas_polares> 
+        <polar id="POLAR-NORTE-A"> 
+            <satelite id="SAT-POL-1001"> 
+                <nombre>Polar-Alfa-1</nombre> 
+                <frecuencia>450.15</frecuencia> 
+            </satelite> 
+            <satelite id="SAT-POL-1002"> 
+                <nombre>Polar-Alfa-2</nombre> 
+                <frecuencia>450.30</frecuencia> 
+            </satelite> 
+        </polar> 
+        <polar id="POLAR-SUR-B"> 
+            <satelite id="SAT-POL-1003"> 
+                <nombre>Polar-Beta-3</nombre> 
+                <frecuencia>450.45</frecuencia> 
+            </satelite> 
+            <satelite id="SAT-POL-1004"> 
+                <nombre>Polar-Beta-4</nombre> 
+                <frecuencia>450.60</frecuencia> 
+            </satelite> 
+        </polar> 
+    </orbitas_polares> 
+    <antenas_terrestres> 
+        <antena id="ANT-USA-1010"> 
+            <nombre>Estacion Terrestre Colorado (10, 10)</nombre> 
+            <coordenadas>10.0000,10.0000</coordenadas> 
+            <ip_nodo>10.0.1.10</ip_nodo> 
+        </antena> 
+        <antena id="ANT-USA-1020"> 
+            <nombre>Estacion Terrestre Kansas (10, 20)</nombre> 
+            <coordenadas>10.0000,20.0000</coordenadas> 
+            <ip_nodo>10.0.1.20</ip_nodo> 
+        </antena> 
+        <antena id="ANT-USA-2020"> 
+            <nombre>Estacion Terrestre Texas (20, 20)</nombre> 
+            <coordenadas>20.0000,20.0000</coordenadas> 
+            <ip_nodo>10.0.2.20</ip_nodo> 
+        </antena> 
+        <antena id="ANT-USA-2030"> 
+            <nombre>Estacion Terrestre Florida (20, 30)</nombre> 
+            <coordenadas>20.0000,30.0000</coordenadas> 
+            <ip_nodo>10.0.2.30</ip_nodo> 
+        </antena> 
+        <antena id="ANT-USA-2040"> 
+            <nombre>Estacion Terrestre Georgia (20, 40)</nombre> 
+            <coordenadas>20.0000,40.0000</coordenadas> 
+            <ip_nodo>10.0.2.40</ip_nodo> 
+        </antena> 
+        <antena id="ANT-USA-3040"> 
+            <nombre>Estacion Terrestre Maine (30, 40)</nombre> 
+            <coordenadas>30.0000,40.0000</coordenadas> 
+            <ip_nodo>10.0.3.40</ip_nodo> 
+        </antena> 
+        <antena id="ANT-USA-3010"> 
+            <nombre>Estacion Terrestre Oregon (30, 10)</nombre> 
+            <coordenadas>30.0000,10.0000</coordenadas> 
+            <ip_nodo>10.0.3.10</ip_nodo> 
+        </antena> 
+    </antenas_terrestres>
+</orbitnet>
